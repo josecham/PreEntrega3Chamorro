@@ -1,0 +1,17 @@
+// GRADIENTES
+header{
+    background-image: linear-gradient(to bottom, lightgreen, transparent);
+}
+footer{
+    background-image: linear-gradient(to top,lightgreen , transparent);
+}
+body{
+    background-image: linear-gradient(to bottom, rgb(219, 219, 224), transparent);
+}
+.bg-principal {
+    background-color: rgb(194, 185, 185);
+}
+$body-color:rgb(219, 219, 224);
+$primary-color:blue;
+$colorPrincipal:black;
+$color-secuandario:darkcyan;
