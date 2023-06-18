@@ -10719,5 +10719,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+header {
+  background-image: linear-gradient(to bottom, lightgreen, transparent);
+}
+
+footer {
+  background-image: linear-gradient(to top, lightgreen, transparent);
+}
+
+body {
+  background-image: linear-gradient(to bottom, rgb(219, 219, 224), transparent);
+}
+
+.bg-principal {
+  background-color: rgb(194, 185, 185);
+}
 
 /*# sourceMappingURL=style.css.map */
