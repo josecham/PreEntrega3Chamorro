@@ -32,21 +32,24 @@ while( entrada !== "SI" )
    
 }
 
-//FUNCION Persona para completar los datos del usuario
-function Persona (nombre, apellido, email){ 
+//FUNCION Constructoras para completar los datos del usuario (Pascalcase string)
+function Persona (nombre, apellido, email, nft){ 
     this.nombre = nombre 
     this.apellido = apellido 
-    this.email = email 
+    this.email = email
+    this.nft = nft 
     }
     
     const nombre = prompt ("ingresar nombre") 
     const apellido = prompt ("ingresar apellido") 
     const email = prompt ("ingresar email")
+    const nft = prompt ("numero de NFT que deseo comprar del 1 al 12")
     
-    const persona3 = new Persona(nombre, apellido, email)
-    
-    console.log(persona3)
-    
+    const persona = new Persona(nombre, apellido, email, nft)
+    console.log(persona)
+    // const persona1 = new Persona(nombre, apellido, email, nft)
+    //console.log(persona1)
+
 //OBJETOS Simulador de Iva
 class Producto {
     constructor(nombre, precio) {
@@ -91,3 +94,5 @@ producto8.vender();
 producto12.vender();
 
 console.log(producto1);
+
+alert ("precio final: " + producto1.precio)
