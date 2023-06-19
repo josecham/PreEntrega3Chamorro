@@ -11,6 +11,21 @@ años = Number(prompt('ingrese año de nacimiento: '))
 }
 }
 
+function Persona (nombre, apellido, email){ 
+    this.nombre = nombre 
+    this.apellido = apellido 
+    this.email = email 
+    }
+    
+    const nombre = prompt ("ingresar nombre") 
+    const apellido = prompt ("ingresar apellido") 
+    const email = prompt ("ingresar email")
+    
+    const persona3 = new Persona(nombre, apellido, email)
+    
+    console.log(persona3)
+    
+
 class Producto {
     constructor(nombre, precio) {
         this.nombre  = nombre.toUpperCase();
