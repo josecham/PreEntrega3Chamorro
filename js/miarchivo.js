@@ -1,3 +1,4 @@
+//algoritmo con condicional if else
 let condition = true
 let años = Number(prompt('ingrese año de nacimento: '))
 while (condition) {
@@ -11,6 +12,27 @@ años = Number(prompt('ingrese año de nacimiento: '))
 }
 }
 
+//Ciclo while que de repite en hasta que se ingresa "SI"
+let entrada = prompt("¿desea comprar un NFT?SI/NO");
+while( entrada !== "SI" )
+{
+   switch (entrada) {
+       case  "NO":
+            alert("no puede ver la pagina");
+            break;
+        case  "si":
+            alert("en MAYÚSCULA");
+            break;     
+       default:
+           alert("escriba SI o NO");
+           break; 
+   }
+   
+   entrada = prompt("¿desea comprar un NFT?SI/NO");
+   
+}
+
+//FUNCION Persona para completar los datos del usuario
 function Persona (nombre, apellido, email){ 
     this.nombre = nombre 
     this.apellido = apellido 
@@ -25,7 +47,7 @@ function Persona (nombre, apellido, email){
     
     console.log(persona3)
     
-
+//OBJETOS Simulador de Iva
 class Producto {
     constructor(nombre, precio) {
         this.nombre  = nombre.toUpperCase();
