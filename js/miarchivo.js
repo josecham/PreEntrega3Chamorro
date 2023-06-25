@@ -1,27 +1,27 @@
 //algoritmo con condicional if else
 let condition = true
-let años = Number(prompt('ingrese año de nacimento: '))
+let años = Number(prompt('Ingrese año de nacimento: '))
 while (condition) {
 if (años < 2005){
 alert("Bienvenido es mayor de 18")
 condition = false
 } else {
-alert ("no puede ver la pagina")
-años = Number(prompt('ingrese año de nacimiento: '))
+alert ("no puede ver la pagina si es menor de 18")
+años = Number(prompt('Ingrese año de nacimiento: '))
 
 }
 }
 
-//Ciclo while que de repite en hasta que se ingresa "SI"
+//Ciclo while que de repite en hasta que se ingresa el si
 let entrada = prompt("¿desea comprar un NFT?SI/NO");
-while( entrada !== "SI" )
+while(( entrada !== "SI" ) && (entrada !== "si"))
 {
    switch (entrada) {
        case  "NO":
             alert("no puede ver la pagina");
             break;
-        case  "si":
-            alert("en MAYÚSCULA");
+        case  "no":
+            alert("no puede ver pagina");
             break;     
        default:
            alert("escriba SI o NO");
@@ -31,7 +31,6 @@ while( entrada !== "SI" )
    entrada = prompt("¿desea comprar un NFT?SI/NO");
    
 }
-
 //FUNCION Constructoras para completar los datos del usuario (Pascalcase string)
 function Persona (nombre, apellido, email, nft){ 
     this.nombre = nombre 
@@ -45,6 +44,35 @@ function Persona (nombre, apellido, email, nft){
     const email = prompt ("ingresar email")
     const nft = prompt ("numero de NFT que deseo comprar del 1 al 12")
 
+     if (nft == 1) {
+            alert("ELEGISTE EL NFT NUMERO UNO");
+        }else if (nft == 2) {
+            alert("ELEGISTE EL NFT NUMERO DOS");
+        }else if (nft == 3) {
+            alert("ELEGISTE EL NFT NUMERO TRES");
+        }else if (nft == 4) {
+            alert("ELEGISTE EL NFT NUMERO CUATRO");
+        }else if (nft == 5) {
+            alert("ELEGISTE EL NFT NUMERO CINCO");
+        }else if (nft == 6) {
+            alert("ELEGISTE EL NFT NUMERO SEIS");
+        }else if (nft == 7) {
+            alert("ELEGISTE EL NFT NUMERO SIETE");
+        }else if (nft == 8) {
+            alert("ELEGISTE EL NFT NUMERO OCHO");
+        }else if (nft == 9) {
+            alert("ELEGISTE EL NFT NUMERO NUEVE");
+        }else if (nft == 10) {
+            alert("ELEGISTE EL NFT NUMERO DIEZ");
+        }else if (nft == 11) {
+            alert("ELEGISTE EL NFT NUMERO ONCE");
+        }else if (nft == 12) {
+            alert("ELEGISTE EL NFT NUMERO DOCE");   
+        }else {
+            alert("ERROR"); 
+        }
+        
+    
     const persona = new Persona(nombre, apellido, email, nft)
     console.log(persona)
     // const persona1 = new Persona(nombre, apellido, email, nft)
