@@ -80,42 +80,27 @@ function Persona (nombre, apellido, email, nft){
 
     //OBJETO y ARRAY
 
-    class Producto {
-        constructor(nombre, precio) {
-            this.nombre  = nombre.toUpperCase();
-            this.precio  = parseFloat(precio);
-            this.vendido = false;
-        }
-        sumaIva() {
-            this.precio = this.precio * 1.21;
-        }
-        vender() {
-            this.vendido = true;
-        }
-    }const productos = [];
-    productos.push(new Producto("nft1", "2000"));
-    productos.push(new Producto("nft2", "2000"));
-    productos.push(new Producto("nft3", "2000"));
-    productos.push(new Producto("nft4", "2000"));
-    productos.push(new Producto("nft5", "2000"));
-    productos.push(new Producto("nft6", "2000"));
-    productos.push(new Producto("nft7", "2000"));
-    productos.push(new Producto("nft8", "2000"));
-    productos.push(new Producto("nft9", "2000"));
-    productos.push(new Producto("nft10", "2000"));
-    productos.push(new Producto("nft11", "2000"));
-    productos.push(new Producto("nft12", "2000"));
-
-    //para sumarle el iva
-    for (const producto of productos)
-        producto.sumaIva();
+    const productos = [
+        {id: 1, producto: 'NFT1', precio: 2000, vendido: "disponible"},
+        {id: 2, producto: 'NFT2', precio: 2000, vendido: "disponible"},
+        {id: 3, producto: 'NFT3', precio: 2000, vendido: "vendido"},
+        {id: 4, producto: 'NFT4', precio: 2000, vendido: "disponible"},
+        {id: 5, producto: 'NFT5', precio: 2000, vendido: "disponible"},
+        {id: 6, producto: 'NFT6', precio: 2000, vendido: "disponible"},
+        {id: 7, producto: 'NFT7', precio: 2000, vendido: "disponible"},
+        {id: 8, producto: 'NFT8', precio: 2000, vendido: "disponible"},
+        {id: 9, producto: 'NFT9', precio: 2000, vendido: "disponible"},
+        {id: 10, producto: 'NFT10', precio: 2000, vendido: "disponible"},
+        {id: 11, producto: 'NFT11', precio: 2000, vendido: "disponible"},
+        {id: 12, producto: 'NFT12', precio: 2000, vendido: "disponible"}
+    ]
+        const buscado = productos.find(producto => producto.id == nft ); 
+        console.log(buscado);
     
-    console.log(productos)
- 
-    //Agregue la funcion vender para que me modifique el producto vendido a true
-    //for (const producto of productos)
-    //producto.vender();
-    //console.log(productos)
+    alert("NOMBRE= " + buscado.producto);
+    alert("PRECIO FINAL + IVA= "+ buscado.precio * 1.21);
+    alert("STOCK= "+ buscado.vendido.toLocaleUpperCase());
+    
 
     // Funcion quedan() para saber cuantos Nft tengo disponibles
     
@@ -130,7 +115,7 @@ function Persona (nombre, apellido, email, nft){
 
     function saludar() {
              
-            alert("Muchas Gracias!! solo resta completar el formulario para efectuar la compra")
+            alert("Muchas Gracias!! solo resta completar el formulario para efectuar la compra si se encuentra disponible")
         
         }
         
