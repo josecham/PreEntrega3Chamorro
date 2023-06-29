@@ -103,6 +103,14 @@ function Persona (nombre, apellido, email, nft){
         {id: 11, producto: 'NFT11', precio: 2300, vendido: "disponible"},
         {id: 12, producto: 'NFT12', precio: 2300, vendido: "disponible"}
     ]
+
+    for (const producto of productos) {
+        console.log(producto.id);
+        console.log(producto.producto);
+        console.log(producto.precio);
+        console.log(producto.vendido);
+    }
+
         const buscado = productos.find(producto => producto.id == nft ); 
         console.log(buscado);
     
