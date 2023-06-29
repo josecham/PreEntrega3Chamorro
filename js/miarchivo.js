@@ -1,3 +1,14 @@
+//constructor Date dias que se mantiene la oferta redondeado hacia abajo con Math.floor
+const navidad = new Date("July 14, 2023")
+const hoy = (new Date())
+
+const milisegundosPorDia = 86400000
+
+console.log( Math.floor((navidad - hoy ) / milisegundosPorDia) )
+
+alert("Oferta Valida por (dias)= " +  Math.floor((navidad - hoy ) / milisegundosPorDia) )
+
+
 //algoritmo con condicional if else
 let condition = true
 let años = Number(prompt('Ingrese año de nacimento: '))
@@ -12,7 +23,7 @@ años = Number(prompt('Ingrese año de nacimiento: '))
 }
 }
 
-//Ciclo while que de repite en hasta que se ingresa el si
+//Ciclo while que de repite en hasta que se ingresa el si o el SI
 let entrada = prompt("¿desea comprar un NFT?SI/NO");
 while(( entrada !== "SI" ) && (entrada !== "si"))
 {
@@ -75,35 +86,32 @@ function Persona (nombre, apellido, email, nft){
     
     const persona = new Persona(nombre, apellido, email, nft)
     console.log(persona)
-    // const persona1 = new Persona(nombre, apellido, email, nft)
-    //console.log(persona1)
+    
 
-    //OBJETO y ARRAY
-
+    //OBJETO y ARRAY FUNCIONES DE ORDEN SUPERIOR
     const productos = [
-        {id: 1, producto: 'NFT1', precio: 2000, vendido: "disponible"},
+        {id: 1, producto: 'NFT1', precio: 2500, vendido: "disponible"},
         {id: 2, producto: 'NFT2', precio: 2000, vendido: "disponible"},
         {id: 3, producto: 'NFT3', precio: 2000, vendido: "vendido"},
         {id: 4, producto: 'NFT4', precio: 2000, vendido: "disponible"},
-        {id: 5, producto: 'NFT5', precio: 2000, vendido: "disponible"},
-        {id: 6, producto: 'NFT6', precio: 2000, vendido: "disponible"},
-        {id: 7, producto: 'NFT7', precio: 2000, vendido: "disponible"},
-        {id: 8, producto: 'NFT8', precio: 2000, vendido: "disponible"},
-        {id: 9, producto: 'NFT9', precio: 2000, vendido: "disponible"},
-        {id: 10, producto: 'NFT10', precio: 2000, vendido: "disponible"},
-        {id: 11, producto: 'NFT11', precio: 2000, vendido: "disponible"},
-        {id: 12, producto: 'NFT12', precio: 2000, vendido: "disponible"}
+        {id: 5, producto: 'NFT5', precio: 2100, vendido: "disponible"},
+        {id: 6, producto: 'NFT6', precio: 2100, vendido: "disponible"},
+        {id: 7, producto: 'NFT7', precio: 2100, vendido: "disponible"},
+        {id: 8, producto: 'NFT8', precio: 2200, vendido: "disponible"},
+        {id: 9, producto: 'NFT9', precio: 2200, vendido: "disponible"},
+        {id: 10, producto: 'NFT10', precio: 2200, vendido: "disponible"},
+        {id: 11, producto: 'NFT11', precio: 2300, vendido: "disponible"},
+        {id: 12, producto: 'NFT12', precio: 2300, vendido: "disponible"}
     ]
         const buscado = productos.find(producto => producto.id == nft ); 
         console.log(buscado);
     
-    alert("NOMBRE= " + buscado.producto);
+    
     alert("PRECIO FINAL + IVA= "+ buscado.precio * 1.21);
     alert("STOCK= "+ buscado.vendido.toLocaleUpperCase());
     
 
     // Funcion quedan() para saber cuantos Nft tengo disponibles
-    
     let nftdisponibles = 11
     function quedan(){ 
     console.log("quedan: "+nftdisponibles)
@@ -115,8 +123,8 @@ function Persona (nombre, apellido, email, nft){
 
     function saludar() {
              
-            alert("Muchas Gracias!! solo resta completar el formulario para efectuar la compra si se encuentra disponible")
+    alert("Muchas Gracias!! solo resta completar el formulario para efectuar la compra si se encuentra disponible")
         
-        }
+    }
         
-        saludar()   
+    saludar()   
