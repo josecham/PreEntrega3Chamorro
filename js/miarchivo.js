@@ -86,7 +86,7 @@ function Persona (nombre, apellido, email, nft){
         }else if (nft == 12) {
             alert("ELEGISTE EL NFT NUMERO DOCE");   
         }else {
-            alert("ERROR"); 
+            alert("ERROR presione F5 para volver"); 
         }
         
     
@@ -346,3 +346,6 @@ function Persona (nombre, apellido, email, nft){
     elementos12c.style.background = "lightgreen";
     elementos12c.style.color = "black";
     elementos12c.style.borderRadius = "4px";
+
+    
+    
