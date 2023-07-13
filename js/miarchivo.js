@@ -146,13 +146,13 @@ function Persona (nombre, apellido, email, nft){
     saludar()   
 
 */
-     //OBJETO y ARRAY FUNCIONES DE ORDEN SUPERIOR
+     //OBJETO y ARRAY FUNCIONES DE ORDEN SUPERIOR, DESESTRUCTURACION DE ARRAY
 
     const shopContent  = document.getElementById("shopContent");
     const verCarrito = document.getElementById("verCarrito");
     const modalContainer = document.getElementById("modal-container");
     const cantidadCarrito = document.getElementById("cantidadCarrito");
-
+/*
     const productos = [
         {id: 1, producto:'NFT1', precio: 2500, vendido: "disponible", comprado: "", imagen:"./img/000.png", cantidad: 1,},
         {id: 2, producto: 'NFT2', precio: 2000, vendido: "disponible", comprado: "", imagen:"./img/1.jpg", cantidad: 1,},
@@ -167,8 +167,9 @@ function Persona (nombre, apellido, email, nft){
         {id: 11, producto: 'NFT11', precio: 2300, vendido: "disponible", comprado: "", imagen:"./img/10.jpg", cantidad: 1,},
         {id: 12, producto: 'NFT12', precio: 2300, vendido: "disponible", comprado: "", imagen:"./img/11.png", cantidad: 1,}
     ]
-
+*/
     //DOM METODOS DE ACCESO A LOS NODOS, DEFINIMOS EL INNERHTML Y AGREGAMOS EL CONTENEDOR CON APPEND AL BODY
+    //OPERADOR LOGICO OR, SI EXISTE SE LO ASIGNA AL CARRITO SINO ARRAY VACIO
 
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
