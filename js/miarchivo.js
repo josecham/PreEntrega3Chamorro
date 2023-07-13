@@ -12,7 +12,7 @@
     promocion1.style.borderRadius = "4px";
 
 
-     //OBJETO y ARRAY FUNCIONES DE ORDEN SUPERIOR, DESESTRUCTURACION DE ARRAY
+    //CAPTURA DEL ID EN JS
 
     const shopContent  = document.getElementById("shopContent");
     const verCarrito = document.getElementById("verCarrito");
