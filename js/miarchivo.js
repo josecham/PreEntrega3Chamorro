@@ -12,7 +12,7 @@
     promocion1.style.borderRadius = "4px";
 
 
-    //CAPTURA DEL ID EN JS
+    //CAPTURA DEL ID A JS
 
     const shopContent  = document.getElementById("shopContent");
     const verCarrito = document.getElementById("verCarrito");
@@ -23,6 +23,8 @@
     //OPERADOR LOGICO OR, SI EXISTE SE LO ASIGNA AL CARRITO SINO ARRAY VACIO
 
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    //TENEMOS QUE RECORRER EL CARRITO CON FOR EACH, CREAR UN DIV Y ELEMENTOS HTML QUE INCORPORO AL DIV
 
     productos.forEach((product) =>
     {
@@ -84,10 +86,11 @@
 
      modalButton.addEventListener("click", () => {
         modalContainer.style.display = "none";
-     });
+
+    });
      modalHeader.append(modalButton);
      
-     //TENEMOS QUE RECORRER EL CARRITO
+     //TENEMOS QUE RECORRER EL CARRITO CON FOR EACH
 
      carrito.forEach((product) => {
         let carritoContent = document.createElement("div");
@@ -102,6 +105,7 @@
         <p>Total+Iva: ${product.cantidad * product.precio * 1.21}</p>
         <span class="delete-product">X</span>
         ` ;
+    //A MODALCONTENT LE AGREGAMOS TODO LO QUE ESTE DENTRO DE CARRITO CONTENT
         modalContainer.append(carritoContent);
 
     let eliminar = carritoContent.querySelector(".delete-product");
@@ -155,4 +159,4 @@
         localStorage.setItem("su nombre es: ", nombre);
         localStorage.setItem("su correo es: ", correo);
     }
-    
+   
