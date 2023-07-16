@@ -1,12 +1,12 @@
     //constructor Date dias que se mantiene la oferta redondeado hacia abajo con Math.floor
-    const promocion = new Date("July 27, 2023")
+    const promocion = new Date("July 31, 2023")
     const hoy = (new Date())
 
     const milisegundosPorDia = 86400000
 
     //los dias que restan de la promocion visualizado en la pagina con queryselector 
     let promocion1 = document.querySelector("#promo");
-    promocion1.innerHTML = "Promoción Valida por " +  Math.floor((promocion - hoy ) / milisegundosPorDia) + "dias";
+    promocion1.innerHTML = "Promoción Valida por " +  Math.floor((promocion - hoy ) / milisegundosPorDia) + " dias";
     promocion1.style.background = "lightgreen";
     promocion1.style.color = "black";
     promocion1.style.borderRadius = "4px";
