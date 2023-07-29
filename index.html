@@ -16,7 +16,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- LINK CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
 </head>
 <body>
     <!-- LO PRIMERO QUE ABRIMOS ES UN CONTAINER -->
@@ -116,7 +116,7 @@
     </div>
 
   <div class="col-12 pt-2">
-    <button class="btn btn-primary fs-4 d-grid gap-2" type="submit" value="submit">FINALIZAR LA COMPRA</button>
+    <button class="btn btn-primary fs-4 d-grid gap-2 " id="mibtn" value="submit">FINALIZAR LA COMPRA</button>
   </div>
 </form>
 </div>
@@ -182,8 +182,12 @@ crossorigin="anonymous"
 <script>
     AOS.init();
 </script>
-<script src="js/productos.js"></script>
-<script src="js/miarchivo.js"></script>
+<!-- SCRIPT ALERT -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- SCRIPT JS -->
+<script  src="js/miarchivo.js" ></script>
+<script src="js/carrito.js"></script>
+<script src="js/formulario.js"></script>
 </body>
 </html>
      
