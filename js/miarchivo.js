@@ -1,5 +1,5 @@
     //constructor Date dias que se mantiene la oferta redondeado hacia abajo con Math.floor
-    const promocion = new Date("August 28, 2023")
+    const promocion = new Date("December 31, 2023")
     const hoy = (new Date())
 
     const milisegundosPorDia = 86400000
