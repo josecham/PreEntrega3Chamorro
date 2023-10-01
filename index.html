@@ -98,11 +98,11 @@
   </div>
   </div>  
 
-<form action="https://formsubmit.co/gabriel_influencia74@hotmail.com" method="post" onsubmit="datos(event)">
+<form action="https://formsubmit.co/gabriel_influencia74@hotmail.com"  method="POST" onsubmit="datos(event)">
   <label for="#" class="form-label">NOMBRE Y APELLIDO</label>
-      <input type="text" class="form-control form-control-lg" id="nombre" placeholder="Mark Roth" required>
+      <input type="text" class="form-control form-control-lg" id="nombre" name="name" placeholder="Mark Roth" required>
       <label for="#" class="form-label">EMAIL</label>
-      <input type="email" class="form-control form-control-lg" id="correo" placeholder="name@example.com">
+      <input type="email" class="form-control form-control-lg" id="correo" name="email" placeholder="name@example.com">
 
   <div class="col-12 pt-2" >
     <div class="form-check">
@@ -116,7 +116,7 @@
     </div>
 
   <div class="col-12 pt-2">
-    <button class="btn btn-primary fs-4 d-grid gap-2 " id="mibtn" value="submit">FINALIZAR LA COMPRA</button>
+    <button class="btn btn-primary fs-4 d-grid gap-2 " id="mibtn" value="submit" type="submit" >FINALIZAR LA COMPRA</button>
   </div>
 </form>
 </div>
